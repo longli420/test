@@ -33,11 +33,6 @@
 
 # 用户输入一个数，判断是否是偶数
 number = eval(input('请输入数字：'))
-# if number % 2 == 0:
-#     print('偶数')
-# elif number % 2 !=0:
-#     print('奇数')
-
 if number % 2 !=0:
     number = number +1
     print(number)
