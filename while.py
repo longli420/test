@@ -32,10 +32,28 @@
 
 
 # 用户输入一个数，判断是否是偶数
-number = eval(input('请输入数字：'))
-if number % 2 !=0:
-    number = number +1
-    print(number)
-else:
-    number = number -1
+
+# number = eval(input('请输入数字：'))
+# if number % 2 !=0:
+#     number = number +1
+#     print(number)
+# # else:
+# #     number = number -1
+# #     print(number)
+
+
+
+# 练习
+
+#用户输入一个数，判断是否为奇数
+
+
+number = eval(input("请输入一个数字："))
+
+# if number % 2 != 0:
+#     x = (number-1) /2
+#     print(x)
+# if x == (number-1) /2:
+#     print('end')
+if number % 2 == 0:
     print(number)
