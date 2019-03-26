@@ -42,7 +42,6 @@ n2 = 1000
 
 print(hex(n1),hex(n2))
 
-# hex()函数 证书转化为十六进制的字符串
-
-ol = bool('您是谁')
-print(hex(ol))
+ol = '你是谁'
+lo = ol.encode('gb2312')
+print(lo)
