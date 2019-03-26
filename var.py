@@ -34,3 +34,15 @@ print(fg)
 a = 12.34
 l = float(a)
 print(l)
+
+# 请利用Python内置的hex()函数把一个整数转换成十六进制表示的字符串：
+
+n1 = 255
+n2 = 1000
+
+print(hex(n1),hex(n2))
+
+# hex()函数 证书转化为十六进制的字符串
+
+ol = bool('您是谁')
+print(hex(ol))
