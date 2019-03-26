@@ -41,7 +41,9 @@ if w&q ==u:
     g.add(6)
     g.remove(1)
 print(g)
-
-
+# replace 改变不了变量 只会把变量赋值
+ml = 'abc'
+lm = ml.replace('a','A')
+print(lm)
 
 
