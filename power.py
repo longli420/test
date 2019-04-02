@@ -32,10 +32,49 @@
 #     return l
 # print(add_end([1,2,3]))
 # list函数对比
-l = set([1,2,3])
-s = set([1,2,3,4])
-def add_end (l,s):
-    d = l|s
-    return d
-print(add_end(l,s))
+# l = set([1,2,3])
+# s = set([1,2,3,4])
+# def add_end (l,s):
+#     d = l|s
+#     return d
+# print(add_end(l,s))
+
+# def add_end(l=None):
+#     if l is None:
+#         l =[]
+#     l.append('end')
+#     return l
+# print(add_end())
+
+# ---------------------------------------------------
+#练习
+# 以下函数允许计算两个数的乘积，请稍加改造，变成可接收一个或多个数并计算乘积
+import math
+# x = [1,2,3]
+# y = [5,6,7]
+# def product(x, y):
+#     x = x[0] + x[1] + x[2]
+#     y = y[0] + y[1] + y[2]
+#     return x * y
+# print(product(x,y))
+
+x0 = eval(input('第一个列数字：'))
+
+x1 = eval(input('第二个列数字：'))
+
+x2 = eval(input('第三个列数字：'))
+
+y0 = eval(input('第一个数字：'))
+
+y1 = eval(input('第二个数字：'))
+
+y2 = eval(input('第三个数字：'))
+
+x = [x0,x1,x2]
+y = [y0,y1,y2]
+def product(x,y):
+    x = math.pow(x[0],2) + math.pow(x[1],2) + math.pow(x[2],2)
+    y = math.pow(y[0],2) + math.pow(y[1],2) + math.pow(y[2],2)
+    return math.pow(x*y,2)
+print(product(x,y))
 
