@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-
+import time
 # sum = 0
 # n = 99
 #
@@ -48,12 +48,22 @@
 #用户输入一个数，判断是否为奇数
 
 
-number = eval(input("请输入一个数字："))
+# number = eval(input("请输入一个数字："))
+#
+# # if number % 2 != 0:
+# #     x = (number-1) /2
+# #     print(x)
+# # if x == (number-1) /2:
+# #     print('end')
+# if number % 2 == 0:
+#     print(number)
 
-# if number % 2 != 0:
-#     x = (number-1) /2
-#     print(x)
-# if x == (number-1) /2:
-#     print('end')
-if number % 2 == 0:
-    print(number)
+#
+# 利用time模块的格式化时间的方法来处理
+# time.localtime(time.time())
+
+# 获取当前时间进行判断
+time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+print(time)
+
+
