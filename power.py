@@ -58,23 +58,51 @@ import math
 #     return x * y
 # print(product(x,y))
 
-x0 = eval(input('第一个列数字：'))
+# x0 = eval(input('第一个列数字：'))
+#
+# x1 = eval(input('第二个列数字：'))
+#
+# x2 = eval(input('第三个列数字：'))
+#
+# y0 = eval(input('第一个数字：'))
+#
+# y1 = eval(input('第二个数字：'))
+#
+# y2 = eval(input('第三个数字：'))
+#
+# x = [x0,x1,x2]
+# y = [y0,y1,y2]
+# def product(x,y):
+#     x = math.pow(x[0],2) + math.pow(x[1],2) + math.pow(x[2],2)
+#     y = math.pow(y[0],2) + math.pow(y[1],2) + math.pow(y[2],2)
+#     return math.pow(x*y,2)
+# print(product(x,y))
 
-x1 = eval(input('第二个列数字：'))
 
-x2 = eval(input('第三个列数字：'))
+# 多重数组算法
+# 第一列
+# import math
+# list0 = eval(input('第一列数字：'))
+# list1 = eval(input('第二列数字：'))
+# list2 = eval(input('第三列数字：'))
+#
+# list = [list0,list1,list2]
+#
+# def Math(list):
+#     x = math.pow(list0,2) * math.pow(list1,2) * math.pow(list2,2)
+#     return x
+# print(Math(list))
 
-y0 = eval(input('第一个数字：'))
+import math
 
-y1 = eval(input('第二个数字：'))
 
-y2 = eval(input('第三个数字：'))
+x0 = eval(input('输入第一列数字:'))
 
-x = [x0,x1,x2]
-y = [y0,y1,y2]
-def product(x,y):
-    x = math.pow(x[0],2) + math.pow(x[1],2) + math.pow(x[2],2)
-    y = math.pow(y[0],2) + math.pow(y[1],2) + math.pow(y[2],2)
-    return math.pow(x*y,2)
-print(product(x,y))
+x1 = eval(input('输入第二列数字:'))
 
+x = [x0,x1]
+
+def Math(x):
+    x = math.pow(x0,2)*math.pow(x1,2)
+    return x
+print(Math(x))
